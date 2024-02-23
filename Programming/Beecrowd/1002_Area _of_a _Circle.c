@@ -2,8 +2,8 @@
 #include<stdio.h>
 main()
 {
-    double n=3.14159, A,R;
+    double R;
     scanf("%lf",&R);
-    A=n*(R*R);
-    printf("A=%.4lf\n",A);
+
+    printf("A=%.4lf\n",(3.14159*(R*R)));
 }
