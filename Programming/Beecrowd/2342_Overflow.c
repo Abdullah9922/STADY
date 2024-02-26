@@ -1,4 +1,4 @@
-//https://judge.beecrowd.com/en/problems/view/1038
+//https://judge.beecrowd.com/en/problems/view/2342
 #include <stdio.h>
 int main ()
 {
