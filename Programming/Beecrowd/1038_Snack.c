@@ -1,32 +1,23 @@
 //https://judge.beecrowd.com/en/problems/view/1038
-#include <stdio.h>
-int main ()
+#include<stdio.h>
+int main()
 {
+    float x,y;
+    scanf("%f %f",&x,&y);
 
-	int N;
-	int P,Q;
-	char R;
+    if(x==1)
+        printf("Total: R$ %.2f\n",(4.00*y));
 
-	scanf("%d",&N);
+    if(x==2)
+        printf("Total: R$ %.2f\n",(4.50*y));
 
-	scanf("%d %c %d",&P,&R,&Q);
+    if(x==3)
+        printf("Total: R$ %.2f\n",(5.00*y));
 
-	if(R == '+')
-	{
-		if(P+Q <= N)
-			printf("OK\n");
+    if(x==4)
+        printf("Total: R$ %.2f\n",(2.00*y));
 
-		else
-			printf("OVERFLOW\n");
-	}
-
-	else
-	{
-		if(P*Q <= N)
-			printf("OK\n");
-		else
-			printf("OVERFLOW\n");
-	}
-
+    if(x==5)
+        printf("Total: R$ %.2f\n",(1.50*y));
 
 }
