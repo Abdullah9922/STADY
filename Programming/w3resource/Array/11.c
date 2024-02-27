@@ -11,8 +11,7 @@ int main()
     for(int i=0; i<n; ++i){
         scanf("%d",&arr[i]);
     }
-    // 5 4 3 2 1
-    // 4 5 3 2 1  --> 1st if
+
 
      for(int i=0; i<n; ++i){
         for(int j=i+1; j<n; ++j){

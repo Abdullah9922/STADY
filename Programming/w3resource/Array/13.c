@@ -11,8 +11,6 @@ int main()
     for(int i=0; i<n; ++i){
         scanf("%d",&arr[i]);
     }
-    // 5 4 3 2 1
-    // 4 5 3 2 1  --> 1st if
 
      for(int i=0; i<n; ++i){
         for(int j=i+1; j<n; ++j){
@@ -50,19 +48,6 @@ int main()
     for(int k=0; k<n+1; ++k){
         printf("%d ",b[k]);
     }
-
-
-
-    /*for(int i=0; i<n; ++i){
-            if(b[k]>arr[i]){
-                b[k]=arr[i];
-                k++;
-                printf("\n%d ",b[k]);
-            }
-
-
-    }*/
-
 
 
 
