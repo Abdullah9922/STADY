@@ -1,12 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n,sum=0;
+    int n,f,l;
     scanf("%d",&n);
 
-    while(n!=0)
-    {
+    l=n%10;
 
+
+    f=n;
+    while(f>=10)
+    {
+        f/=10;
     }
+    printf("%d\n",f);
+    printf("%d\n",l);
+
+
 
 }
