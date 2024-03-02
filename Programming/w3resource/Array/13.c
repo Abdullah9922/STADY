@@ -12,7 +12,7 @@ int main()
         scanf("%d",&arr[i]);
     }
 
-     for(int i=0; i<n; ++i){
+     for(int i=0; i<n; ++i){ // sort in descending order
         for(int j=i+1; j<n; ++j){
             if(arr[i] < arr[j]){
                 int temp =arr[i];
@@ -23,33 +23,29 @@ int main()
     }
 
     printf("sorted %d elements in the array : ",n);
-    for(int i=0; i<n; ++i){
+    for(int i=0; i<n; ++i){ // print sorted array
         printf("%d ",arr[i]);
     }
 
+    printf("\nEnter a number that you insert: ");
+    int insert,asi;
+    scanf("%d",&insert);
 
-    int k=0;
-    int b[k];
-    printf("\nInput the value to be inserted : ");
-    scanf("%d",&b[k]);
-
-    printf("\nAfter Insert the list is : ");
-
-    for(int i=0; i<n+1; ++i){
-        for(int k=i+1; k<n+1; ++k){
-            if(arr[i] < b[k]){
-                int temp =arr[i];
-                arr[i]=b[k];
-                b[k]=temp;
-            }
+    arr[n+1];
+    for(int i=0; i<n+1; ++i){ // just assign index
+        if(insert>=arr[i]){
+            asi=i;
+            break;
         }
     }
 
-    for(int k=0; k<n+1; ++k){
-        printf("%d ",b[k]);
+    for(int i=n-1; i>=asi; --i){// insertion
+        arr[i+1]=arr[i];
+    }
+    arr[asi]=insert;
+
+    for(int i=0; i<n+1; ++i){ // print after inserted array
+        printf("%d ",arr[i]);
     }
 
-
-
 }
-
