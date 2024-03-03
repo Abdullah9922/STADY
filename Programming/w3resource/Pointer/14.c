@@ -9,9 +9,9 @@ int main()
 
     int a[n];
     printf("Input %d number of elements in the array :\n",n);
-    for(int i=1;i<=n;i++){
-        printf("element - %d : ",i);
-        scanf("%d",&a[i]);
+    for(int i=0;i<n;i++){
+        printf("element - %d : ",i+1);
+        scanf("%d",a+i);
     }
 
     for (i = 0; i < n; i++) {
@@ -27,8 +27,8 @@ int main()
 
 
     printf("The elements in the array after sorting :\n");
-    for(int i=1;i<=n;i++){
-        printf("element - %d : %d\n",i,a[i]);
+    for(int i=0;i<n;i++){
+        printf("element - %d : %d\n",i+1,*(a+i));
     }
 
 }

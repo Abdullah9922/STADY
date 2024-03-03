@@ -1,19 +1,21 @@
 #include<stdio.h>
 int main()
 {
+
     int i,n,sum=0;
-    int *pos;
-    int a[n];
+    int *ps;
+
 
     scanf("%d",&n);
 
-    for( i=1;i<=n;i++)
+    int a[n];
+    for( i=0;i<n;i++)
         scanf("%d",&a[i]);
 
-    pos=a;
+    ps=a;
     for(int i=0;i<n;i++){
-        sum = sum + *pos;
-        pos++;
+        sum = sum + *ps;
+        ps++;
     }
 
     printf("Total = %d\n\n",sum);

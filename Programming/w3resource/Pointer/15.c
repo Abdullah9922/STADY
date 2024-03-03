@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int findlarger(int*,int*);
+int findlarger(int *,int*);
 
-int main()
+int main(void)
 {
     int n1,n2,rusalt;
     scanf("%d %d",&n1,&n2);
