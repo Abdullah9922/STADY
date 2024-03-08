@@ -3,6 +3,7 @@ int main()
 {
     char a[100];
     gets(a);
+
     int a1=0,e1=0,i1=0,o1=0,u1=0,con=0;
 
     for(int j=0;a[j]!=NULL;j++){
