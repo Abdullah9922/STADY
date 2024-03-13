@@ -19,8 +19,11 @@ char rev(char a[])
     static int i=0;
     static char ra[100];
     if(a[i]!=NULL){
-        rev(a+1);
-        ra[i++]=a[i];
+        //rev(a+1);
+        ra[i]=a[i];
+        i++;
+        puts(ra);
+        rev(a);
     }
-    return a;
+    return ra;
 }
