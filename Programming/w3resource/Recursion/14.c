@@ -1,45 +1,27 @@
 #include<stdio.h>
 
-int even[100],odd[100];
-void fun(int ,int );
+int fun(int ,int );
 
 int main()
 {
-    int a,b;
-    scanf("%d d",&a,&b);
-    fun(a,b);
+    int stval,n;
+    scanf("%d",&n);
+
+    printf ("Even number:  ");
+    fun(2,n);
+
+    printf ("\nOdd number:  ");
+    fun(1,n);
+    printf("\n\n");
 }
 
 
-void fun(int a,int b)
+int fun(int stval ,int n)
 {
-    int i=a,j=0,counteven=0,countodd=0;
-    if(i!=b){
-        if(i%2==0){
-            even[j]=i;
-            i++;
-            j++;
-            counteven++;
-            fun(a,b);
-        }
-        else{
-            odd[j]=i;
-            j++;
-            i++;
-            countodd++;
-            fun(a,b);
-        }
-    }
-    else{
-
-        printf("EVEN NUMBERS ARE:\n");
-        for(int i=0;i<counteven;i++)
-            printf("%d  ",even[i]);
-
-        printf("\nOdd NUMBERS ARE:\n");
-        for(int i=0;i<countodd;i++)
-            printf("%d  ",odd[i]);
-    }
+    if(stval>n)
+        return;
+    printf("%d ",stval);
+    fun(stval+2,n);
 }
 
 
