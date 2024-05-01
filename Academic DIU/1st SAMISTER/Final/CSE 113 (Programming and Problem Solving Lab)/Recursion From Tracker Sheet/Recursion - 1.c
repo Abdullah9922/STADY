@@ -1,20 +1,38 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int a;
-void print_sequence(int N) {
-    int a=0;
-    if (N == 1) {
-        printf("%d ",a);  // Base case: print 1 and do not make any more recursive calls.
-        print_sequence(N);
-    }
+void output(int);
+
+int main()
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    output(n);
+
+    return 0;
+}
+
+void printIncreasing(int num) {
+    if (num <= 0)
+        return;
+
+    printIncreasing(num - 1);
+    printf("%d ", num);
+}
+void printDecreasing(int num) {
+    if (num <= 0)
+        return ;
+
+    printf("%d ", num);
+    printDecreasing(num - 1);
 
 }
 
-int main() {
-    int N;
-    printf("Enter a number: ");
-    scanf("%d", &N);  // Read the integer number from user input
-    print_sequence(N); // Call the function to print the sequence
-    printf("\n");  // Newline for clean output after the sequence
-    return 0;
+
+void output(int n)
+{
+    printIncreasing(n);
+    printDecreasing(n-1);
+
 }
