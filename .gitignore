@@ -1,0 +1,31 @@
+# Object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Debug files
+*.dSYM/
+*.log
+
+# IDE files (if using an IDE like VSCode, Eclipse, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build directories
+/build/
+bin/
+obj/
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+Makefile
